@@ -3,13 +3,33 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <!--在servlet-name标签中配置Servlet别名，同时在servlet-class标签中配置Servlet类的完全限定名 包名+类名-->
     <servlet>
         <servlet-name>myServlet</servlet-name>
         <servlet-class>com.yiming.MyServlet</servlet-class>
     </servlet>
+    <!--配置servlet与请求之间的映射关系-->
     <servlet-mapping>
         <servlet-name>myServlet</servlet-name>
         <url-pattern>/first</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>myServletSecond</servlet-name>
+        <servlet-class>com.yiming.MyServletSecond</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myServletSecond</servlet-name>
+        <url-pattern>/second</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletLife</servlet-name>
+        <servlet-class>com.yiming.ServletLife</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLife</servlet-name>
+        <url-pattern>/life</url-pattern>
+    </servlet-mapping>
 </web-app>
