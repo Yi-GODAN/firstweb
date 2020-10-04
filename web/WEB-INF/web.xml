@@ -32,4 +32,31 @@
         <servlet-name>ServletLife</servlet-name>
         <url-pattern>/life</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MethodServlet</servlet-name>
+        <servlet-class>com.yiming.MethodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MethodServlet</servlet-name>
+        <url-pattern>/method</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RequestServlet</servlet-name>
+        <servlet-class>com.yiming.RequestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/request</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ResponseServlet</servlet-name>
+        <servlet-class>com.yiming.ResponseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResponseServlet</servlet-name>
+        <url-pattern>/response</url-pattern>
+    </servlet-mapping>
 </web-app>
